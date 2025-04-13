@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Assignment</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .highlight {
+      color: purple;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      background-color: teal;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkcyan;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="main-heading">Hello, Love!</h1>
+  </header>
+
+  <main>
+    <p id="intro">This paragraph will change dynamically using JavaScript.</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="toggleElement()">Add/Remove Element</button>
+
+    <section id="dynamic-area"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Assignment</p>
+  </footer>
+</body>
+</html>
